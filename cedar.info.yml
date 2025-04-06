@@ -1,0 +1,39 @@
+name: cedar
+description: ''
+screenshot: screenshot.png
+'alt text': 'cedar theme screenshot'
+core_version_requirement: ^11
+engine: twig
+type: theme
+'base theme': radix
+starterkit: true
+'interface translation project': cedar
+'interface translation server pattern': themes/custom/cedar/translations/%language.po
+regions:
+  banner: 'Banner image'
+  navbar_branding: 'Navbar branding'
+  navbar_left: 'Navbar left'
+  navbar_right: 'Navbar right'
+  header: Header
+  content: Content
+  page_bottom: 'Page bottom'
+  footer: Footer
+libraries:
+  - cedar/style
+ckeditor5-stylesheets:
+  - build/css/main.style.css
+libraries-extend:
+  core/drupal.ajax:
+    - cedar/drupal.ajax
+  core/drupal.checkbox:
+    - cedar/drupal.checkbox
+  core/drupal.message:
+    - cedar/drupal.message
+  core/drupal.progress:
+    - cedar/drupal.progress
+  clientside_validation_jquery/cv.jquery.validate:
+    - cedar/jquery.validate
+version: 1.0.0
+project: radix
+datestamp: 1737210935
+generator: 'radix_starterkit:6.0.1'

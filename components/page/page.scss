@@ -1,0 +1,13 @@
+@import "../../src/scss/init";
+
+.path-frontpage .page-title {
+    display: none;
+}
+
+.banner {
+ background-image: url("../../build/assets/images/bg-3.png");
+  background-size: cover;
+  min-height: 250px;
+  margin-bottom: 0;
+  padding: 0;
+}

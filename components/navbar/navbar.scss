@@ -1,0 +1,15 @@
+@import "../../src/scss/init";// Navbar
+//
+// Provide a static navbar from which we expand to create full-width, fixed, and
+// other navbar variations.
+
+
+.navbar {
+  background-color: cadetblue !important;
+}
+
+.navbar a,
+.navbar a.hover,
+.navbar a.active {
+  color: #fff !important;
+}
