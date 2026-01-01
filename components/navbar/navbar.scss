@@ -1,15 +1,55 @@
-@import "../../src/scss/init";// Navbar
+// Navbar
 //
 // Provide a static navbar from which we expand to create full-width, fixed, and
 // other navbar variations.
 
 
-.navbar {
+.navbar,
+.dropdown,
+.dropdown-item,
+.dropdown-item.active, 
+.dropdown-item:active {
   background-color: cadetblue !important;
 }
 
-.navbar a,
-.navbar a.hover,
+.navbar-brand__text {
+    color: darkcyan;
+    font-size: 3rem !important;
+    margin-left: 2em !important;
+    margin-top: .2em !important;
+    font-weight: 600;
+    font-family: cursive;
+}
+
+.navbar a {
+  color: #eee !important;
+}
+
 .navbar a.active {
   color: #fff !important;
+}
+
+.navbar a:hover {
+  color: #007 !important;
+}
+
+.sandstone,
+.tooltip,
+.dropdown-menu .dropdown-item,
+.pagination,
+.breadcrumb, 
+.nav-pills .nav-link, 
+.nav-tabs .nav-link, 
+.btn {
+	text-transform: none !important;
+	font-size: .8rem !important;
+	font-weight: normal !important;
+	line-height: normal !important;
+}
+
+.navbar .nav-link {
+	text-transform: none !important;
+	font-size: 1.2rem !important;
+	font-weight: normal !important;
+	line-height: normal !important;
 }
