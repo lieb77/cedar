@@ -5,16 +5,16 @@
 */
 #}
 
-<div class="swiper mySwiper">
-  <div class="swiper-wrapper">
-    {# Loop through your content here #}
-    <div class="swiper-slide">Slide 1</div>
-    <div class="swiper-slide">Slide 2</div>
-    <div class="swiper-slide">Slide 3</div>
-  </div>
-  <!-- Add Pagination -->
-  <div class="swiper-pagination"></div>
-  <!-- Add Navigation -->
-  <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
+<div class="cedar-slides">
+	<div {{ attributes.addClass('photo-slider', 'swiper').setAttribute('style', '--component-height: ' ~ slider_height|default('60px') ~ ';') }}>
+		<div class="swiper-wrapper">
+			{% for picture in content %}
+				<div class="swiper-slide">{{ picture }}</div>
+			{% endfor %}				
+		</div>
+		<div class="swiper-pagination"></div>
+		<div class="swiper-button-next"></div>
+		<div class="swiper-button-prev"></div>
+		
+	</div>
 </div>

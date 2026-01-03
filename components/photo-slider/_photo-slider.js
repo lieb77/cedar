@@ -1,27 +1,50 @@
 // components/swiper-carousel/_swiper-carousel.js
 
+// import Swiper bundle with all modules installed
 import Swiper from 'swiper/bundle';
+// import styles bundle
+import 'swiper/css/bundle';
 
-// Initialize Swiper after Drupal behaviors are attached
 (function (Drupal, once) {
-  Drupal.behaviors.swiperCarousel = {
+  Drupal.behaviors.photoSlider = {
     attach: function (context, settings) {
-      once('swiper-carousel', '.mySwiper', context).forEach(function (element) {
-        new Swiper(element, {
-          // Optional parameters
-          direction: 'horizontal',
+      // Use 'once' to ensure Swiper is only initialized once per element.
+      // The 'photo-slider-init' is a unique ID for this instance.
+      const elements = once('photo-slider-init', '.photo-slider', context);
+
+      elements.forEach((slider) => {
+        // We initialize Swiper and scope selectors to this specific slider instance
+        const swiperInstance = new Swiper(slider, {
           loop: true,
+		  slidesPerView: 1,
+		  observer: true, 
+		  observeParents: true,
+		  centeredSlides: true,
 
-          // If we need pagination
+		  // Enable Autoplay
+		  autoplay: {
+			delay: 5000, // 5 seconds
+			disableOnInteraction: false,
+		  },
+		  
+          // Pagination settings
           pagination: {
-            el: '.swiper-pagination',
+            el: slider.querySelector('.swiper-pagination'),
+            clickable: true,
           },
 
-          // Navigation arrows
+          // Navigation settings
           navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: slider.querySelector('.swiper-button-next'),
+            prevEl: slider.querySelector('.swiper-button-prev'),
           },
+
+          // Optional: accessible focus management
+          a11y: {
+            prevSlideMessage: Drupal.t('Previous slide'),
+            nextSlideMessage: Drupal.t('Next slide'),
+          },          		 
+          
         });
       });
     }

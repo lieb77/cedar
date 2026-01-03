@@ -191,4 +191,19 @@
   --bs-form-invalid-border-color: rgb(232.2, 151.8, 149.4);
 }
 
-/*# sourceMappingURL=page-content.css.map*/
+.cedar-image h2 {
+  font-size: 2rem !important;
+  color: green !important;
+}
+
+.cedar-image h3 {
+  font-size: 1rem;
+  color: green;
+}
+
+.cedar-image img {
+  height: 60vh !important;
+  width: auto !important;
+}
+
+/*# sourceMappingURL=cedar-image.css.map*/

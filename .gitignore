@@ -15,3 +15,7 @@ node_modules
 .nvmrc
 .stylelintignore
 .stylelintrc.json
+
+mix-manifest.json
+pnpm*
+build

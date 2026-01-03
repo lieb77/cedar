@@ -1,0 +1,40 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json
+name: cedar-image
+status: experimental
+description: 'An image component which adds some fields to the base canvas/image component'
+props:
+  type: object
+  properties:
+    name:
+      type: string
+      title: Name
+      description: Title for the picture.
+      examples: ['Picture 1', 'Picture 2']
+    content:
+      type: string
+      title: 'Rich text content'
+      contentMediaType: text/html
+      x-formatting-context: block
+      examples: ['<p>This is <strong>formatted</strong> text</p>']  
+    category:
+      type: string
+      title: Category
+      description: Picture category
+      enum:
+        - Family
+        - Ride
+        - Bicycle
+        - Instrument
+        - Artist
+      examples: ['Bicycle']
+    image:
+      $ref: json-schema-definitions://canvas.module/image
+      type: object
+      title: Image
+      description: >
+        Image
+      examples:
+        - src: 'micro.webp'
+        - alt: 'Bike ride picture'
+        - width: 640
+        - height: 480

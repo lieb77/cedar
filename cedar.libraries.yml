@@ -7,6 +7,16 @@ style:
   dependencies:
     - core/drupal
 
+swiper:
+  css:
+    theme:
+      node_modules/swiper/swiper-bundle.min.css: {}
+  js:
+    node_modules/swiper/swiper-bundle.min.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery # Swiper doesn't strictly need jQuery, but many Drupal themes use it.
+
 drupal.ajax:
   js:
     src/js/overrides/ajax.js: {}
@@ -61,14 +71,3 @@ jquery.validate:
     - core/jquery
 
 # SUBTHEME_NAME.libraries.yml
-
-swiper:
-  css:
-    theme:
-      node_modules/swiper/swiper-bundle.min.css: {}
-  js:
-    node_modules/swiper/swiper-bundle.min.js: {}
-  dependencies:
-    - core/drupal
-    - core/jquery # Swiper doesn't strictly need jQuery, but many Drupal themes use it.
-

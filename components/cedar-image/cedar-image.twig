@@ -1,0 +1,17 @@
+{#
+/**
+* @file
+* Template for photo-slider component.
+*/
+#}
+
+<div class="cedar-image">
+    <h2>{{ name }}</h2>
+    {% include 'canvas:image' with image|merge({
+  		loading: 'lazy',
+	}) only %}
+    <div class="content">
+  		{{ content }}
+	</div>
+</div>
+
