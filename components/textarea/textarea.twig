@@ -8,6 +8,8 @@
  * - value: The content of the textarea.
  * - textarea_utility_classes: (optional) An array of additional classes for design and styling requirements.
  *
+ *
+ *
  * @see template_preprocess_textarea()
  */
 #}
@@ -18,6 +20,11 @@
   ]|merge(textarea_utility_classes ?: [])
 %}
 
+
+<div class="content">
+	{{ value }}
+</div>
+
 <textarea{{attributes.addClass(textarea_classes)}}>
 {% if value %}
   {{ {
@@ -27,4 +34,3 @@
   } }}
 {% endif %}
 </textarea>
-

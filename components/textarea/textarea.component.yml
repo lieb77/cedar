@@ -10,16 +10,16 @@ props:
       description: 'HTML attributes assigned to the textarea element, represented as a Drupal Attribute object.'
       type: Drupal\Core\Template\Attribute
     value:
+      description: 'The content of the textarea.'
       type: string
-      title: 'Text'
-    format:
-      type: string
-      title: 'Format'
-      enum: ['basic_html', 'full_html']
-table_utility_classes:
+      title: 'Textarea Content'
+      contentMediaType: text/html
+      x-formatting-context: block
+      examples: ['<p>This is <strong>formatted</strong> text</p>']  
+    table_utility_classes:
       type: array
       items:
         type: string
       description: 'Additional classes for custom design and styling requirements.'
       title: 'Utility Classes'
-      default: []
+      default: []      

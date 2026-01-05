@@ -11,12 +11,13 @@
   ]|merge(page_utility_classes ?: [])
 %}
 
+{# { dump() } #}
 
 <div {{ page_attributes.addClass(page_classes) }}>
 
 
 {% block banner %}
-  <header id="banner" class="banner" >
+  <header id="banner" class="banner" style="background-image: url({{ site_bg_url }});" >
     {{ page.banner }}
   </header>
 {% endblock %}

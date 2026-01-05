@@ -191,4 +191,8 @@
   --bs-form-invalid-border-color: rgb(232.2, 151.8, 149.4);
 }
 
+textarea {
+  color: green;
+}
+
 /*# sourceMappingURL=textarea.css.map*/
