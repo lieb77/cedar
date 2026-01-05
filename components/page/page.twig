@@ -11,17 +11,16 @@
   ]|merge(page_utility_classes ?: [])
 %}
 
-{# { dump() } #}
 
 <div {{ page_attributes.addClass(page_classes) }}>
 
-
+{% if path == "/node/1" %}
 {% block banner %}
   <header id="banner" class="banner" style="background-image: url({{ site_bg_url }});" >
     {{ page.banner }}
   </header>
 {% endblock %}
-
+{% endif %}
 
 	{% block page_navigation %}
 		{% include 'cedar:page-navigation' %}

@@ -22,3 +22,7 @@ slots:
     title: List items
     description: >
         Place any SDC in this slot, to add them to the list.
+libraryOverrides:
+  dependencies:
+    - core/drupal
+    - core/once
