@@ -16,6 +16,10 @@ class CedarHooks {
 	*/
 	#[Hook('preprocess_page')]
 	public function preprocessPage(array &$variables): void {
+	
+		$variables['site_bg_url'] = theme_get_setting("image_path");
+	
+/*	
 		$myConfigPage = \Drupal\config_pages\Entity\ConfigPages::config('site_settings');
 		$config = $myConfigPage->toArray();
 		$media_id = $config['field_background_image'][0]['target_id'];
@@ -32,6 +36,7 @@ class CedarHooks {
 					}
     			}
 		}
+*/		
 	}
 
 
