@@ -203,6 +203,8 @@
 @container (min-width: 600px) {
   .feature__inner {
     display: flex;
+    align-items: flex-start;
+    gap: 1em;
   }
   .feature--flipped .feature__inner {
     flex-direction: row-reverse;
@@ -220,7 +222,6 @@
   }
 }
 .feature__image-wrapper img {
-  aspect-ratio: 4/3;
   -o-object-fit: cover;
      object-fit: cover;
 }

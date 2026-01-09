@@ -13,6 +13,8 @@
 .feature__inner {
   @container (min-width: 600px) {
     display: flex;
+    align-items: flex-start;
+    gap: 1em;
 
     .feature--flipped & {
       flex-direction: row-reverse;
@@ -30,7 +32,6 @@
   }
 
   img {
-    aspect-ratio: 4 / 3;
     object-fit: cover;
   }
 }
