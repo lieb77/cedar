@@ -1,7 +1,7 @@
-name: cedar
+name: Cedar
 description: ''
 screenshot: screenshot.png
-'alt text': 'cedar theme screenshot'
+'alt text': 'Cedar theme screenshot'
 core_version_requirement: ^11
 engine: twig
 type: theme
@@ -33,7 +33,4 @@ libraries-extend:
     - cedar/drupal.progress
   clientside_validation_jquery/cv.jquery.validate:
     - cedar/jquery.validate
-version: 1.0.0
-project: radix
-datestamp: 1737210935
-generator: 'radix_starterkit:6.0.1'
+version: 1.0.2
