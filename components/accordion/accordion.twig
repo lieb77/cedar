@@ -73,8 +73,8 @@
       %}
     {% endif #}
 
-    {% for item in items %}
-    	<h2>{{ item['#component']['#props']['title'] }}</h2>
+    {% for item in items %}   
+		{% set title = item['#component']['#props']['title'] %}
     	{% set content =  item %}    
 		{% set open_item = open_item_id == loop.index %}
 		{%
@@ -105,7 +105,7 @@
 
             {%
               include 'radix:button' with {
-                content: item.title,
+                content: title,
                 button_attributes,
               }
             %}

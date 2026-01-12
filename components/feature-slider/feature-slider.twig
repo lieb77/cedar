@@ -1,0 +1,20 @@
+{#
+/**
+* @file
+* Template for feature-slider component.
+*/
+#}
+
+<div class="feature-slides">
+	<div {{ attributes.addClass('feature-slider', 'swiper').setAttribute('style', '--component-height: ' ~ slider_height|default('60px') ~ ';') }}>
+		<div class="swiper-wrapper">
+			{% for feature in content %}
+				<div class="swiper-slide">{{ feature }}</div>
+			{% endfor %}				
+		</div>
+		<div class="swiper-pagination"></div>
+		<div class="swiper-button-next"></div>
+		<div class="swiper-button-prev"></div>
+		
+	</div>
+</div>

@@ -10976,9 +10976,9 @@ _shared_swiper_core_mjs__WEBPACK_IMPORTED_MODULE_0__.S.use(modules);
 var __webpack_exports__ = {};
 // This entry needs to be wrapped in an IIFE because it needs to be isolated against other modules in the chunk.
 (() => {
-/*!**************************************************!*\
-  !*** ./components/photo-slider/_photo-slider.js ***!
-  \**************************************************/
+/*!******************************************************!*\
+  !*** ./components/feature-slider/_feature-slider.js ***!
+  \******************************************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var swiper_bundle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper/bundle */ "./node_modules/.pnpm/swiper@12.0.3/node_modules/swiper/swiper-bundle.mjs");
 /* harmony import */ var swiper_css_bundle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! swiper/css/bundle */ "./node_modules/.pnpm/swiper@12.0.3/node_modules/swiper/swiper-bundle.css");
@@ -10989,11 +10989,11 @@ __webpack_require__.r(__webpack_exports__);
 // import styles bundle
 
 (function (Drupal, once) {
-  Drupal.behaviors.photoSlider = {
+  Drupal.behaviors.featureSlider = {
     attach: function attach(context, settings) {
       // Use 'once' to ensure Swiper is only initialized once per element.
-      // The 'photo-slider-init' is a unique ID for this instance.
-      var elements = once('photo-slider-init', '.photo-slider', context);
+      // The 'feature-slider-init' is a unique ID for this instance.
+      var elements = once('feature-slider-init', '.feature-slider', context);
       elements.forEach(function (slider) {
         // We initialize Swiper and scope selectors to this specific slider instance
         var swiperInstance = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"](slider, {
@@ -11032,4 +11032,4 @@ __webpack_require__.r(__webpack_exports__);
 
 /******/ })()
 ;
-//# sourceMappingURL=photo-slider.js.map
+//# sourceMappingURL=feature-slider.js.map

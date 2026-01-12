@@ -1,0 +1,47 @@
+@import "../../src/scss/init";
+
+
+/* The main container must be relative for absolute children (arrows) */
+.feature-slider.swiper {
+	height: 80vh;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	list-style: none;
+	padding: 0;
+	z-index: 1;
+	display: block;
+}
+
+
+.feature-slider.swiper-initialized {
+	visibility: visible; /* Show once JS is ready */
+}
+
+
+.feature-slider .swiper-slide {
+	width: auto; 
+	padding: 0 3em;
+  	justify-content: center;
+  	align-items: center;
+}
+ 
+ 
+ 
+/* Position the buttons on the left and right sides */
+.feature-slider .swiper-button-prev,
+.feature-slider .swiper-button-next {
+	position: absolute;
+	top: 50%;
+	width: calc(var(--swiper-navigation-size) / 44 * 27);
+	height: var(--swiper-navigation-size);
+	margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+	z-index: 10;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #000; 
+}
+
+
