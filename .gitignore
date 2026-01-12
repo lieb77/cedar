@@ -5,7 +5,8 @@
 .idea
 .vscode
 node_modules
-
+build 
+mix-manifest.json
 # local env files
 .env.local
 .env.test.local
