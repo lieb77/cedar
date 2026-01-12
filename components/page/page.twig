@@ -15,25 +15,25 @@
 <div {{ page_attributes.addClass(page_classes) }}>
 
 {% if path == "/node/1" %}
-{% block banner %}
-  <header id="banner" class="banner" style="background-image: url({{ site_bg_url }});" >
-    {{ page.banner }}
-  </header>
-{% endblock %}
+	{% block banner %}
+	  <header id="banner" class="banner" style="background-image: url({{ site_bg_url }});" >
+		{{ page.banner }}
+	  </header>
+	{% endblock %}
 {% endif %}
 
-	{% block page_navigation %}
-		{% include 'cedar:page-navigation' %}
-	{% endblock %}
+{% block page_navigation %}
+	{% include 'cedar:page-navigation' %}
+{% endblock %}
 
-  {% block page_content %}
-    {% include 'cedar:page-content' with {
-      page_main_utility_classes: ['py-5'],
-      page_header_container_utility_classes: ['mb-3'],
-    }%}
-  {% endblock %}
+{% block page_content %}
+{% include 'cedar:page-content' with {
+  page_main_utility_classes: ['py-5'],
+  page_header_container_utility_classes: ['mb-3'],
+}%}
+{% endblock %}
 
-	{% block page_footer %}
-		{% include 'radix:page-footer' %}
-	{% endblock %}
+{% block page_footer %}
+	{% include 'radix:page-footer' %}
+{% endblock %}
 </div>

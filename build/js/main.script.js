@@ -1,6 +1,19 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./components/accordion/accordion.scss"
+/*!*********************************************!*\
+  !*** ./components/accordion/accordion.scss ***!
+  \*********************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ },
+
 /***/ "./components/block/block.scss"
 /*!*************************************!*\
   !*** ./components/block/block.scss ***!
@@ -8560,16 +8573,17 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		var installedChunks = {
 /******/ 			"/build/js/main.script": 0,
 /******/ 			"build/css/main.style": 0,
-/******/ 			"components/navbar/navbar": 0,
 /******/ 			"components/feature/feature": 0,
 /******/ 			"components/cedar-image/cedar-image": 0,
 /******/ 			"components/block/block": 0,
+/******/ 			"components/accordion/accordion": 0,
 /******/ 			"components/textarea/textarea": 0,
 /******/ 			"components/photo-slider/photo-slider": 0,
 /******/ 			"components/page/page": 0,
 /******/ 			"components/page-navigation/page-navigation": 0,
 /******/ 			"components/page-content/page-content": 0,
-/******/ 			"components/node/node": 0
+/******/ 			"components/node/node": 0,
+/******/ 			"components/navbar/navbar": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -8619,18 +8633,19 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["build/css/main.style","components/navbar/navbar","components/feature/feature","components/cedar-image/cedar-image","components/block/block","components/textarea/textarea","components/photo-slider/photo-slider","components/page/page","components/page-navigation/page-navigation","components/page-content/page-content","components/node/node"], () => (__webpack_require__("./src/js/main.script.js")))
-/******/ 	__webpack_require__.O(undefined, ["build/css/main.style","components/navbar/navbar","components/feature/feature","components/cedar-image/cedar-image","components/block/block","components/textarea/textarea","components/photo-slider/photo-slider","components/page/page","components/page-navigation/page-navigation","components/page-content/page-content","components/node/node"], () => (__webpack_require__("./src/scss/main.style.scss")))
-/******/ 	__webpack_require__.O(undefined, ["build/css/main.style","components/navbar/navbar","components/feature/feature","components/cedar-image/cedar-image","components/block/block","components/textarea/textarea","components/photo-slider/photo-slider","components/page/page","components/page-navigation/page-navigation","components/page-content/page-content","components/node/node"], () => (__webpack_require__("./components/block/block.scss")))
-/******/ 	__webpack_require__.O(undefined, ["build/css/main.style","components/navbar/navbar","components/feature/feature","components/cedar-image/cedar-image","components/block/block","components/textarea/textarea","components/photo-slider/photo-slider","components/page/page","components/page-navigation/page-navigation","components/page-content/page-content","components/node/node"], () => (__webpack_require__("./components/cedar-image/cedar-image.scss")))
-/******/ 	__webpack_require__.O(undefined, ["build/css/main.style","components/navbar/navbar","components/feature/feature","components/cedar-image/cedar-image","components/block/block","components/textarea/textarea","components/photo-slider/photo-slider","components/page/page","components/page-navigation/page-navigation","components/page-content/page-content","components/node/node"], () => (__webpack_require__("./components/feature/feature.scss")))
-/******/ 	__webpack_require__.O(undefined, ["build/css/main.style","components/navbar/navbar","components/feature/feature","components/cedar-image/cedar-image","components/block/block","components/textarea/textarea","components/photo-slider/photo-slider","components/page/page","components/page-navigation/page-navigation","components/page-content/page-content","components/node/node"], () => (__webpack_require__("./components/navbar/navbar.scss")))
-/******/ 	__webpack_require__.O(undefined, ["build/css/main.style","components/navbar/navbar","components/feature/feature","components/cedar-image/cedar-image","components/block/block","components/textarea/textarea","components/photo-slider/photo-slider","components/page/page","components/page-navigation/page-navigation","components/page-content/page-content","components/node/node"], () => (__webpack_require__("./components/node/node.scss")))
-/******/ 	__webpack_require__.O(undefined, ["build/css/main.style","components/navbar/navbar","components/feature/feature","components/cedar-image/cedar-image","components/block/block","components/textarea/textarea","components/photo-slider/photo-slider","components/page/page","components/page-navigation/page-navigation","components/page-content/page-content","components/node/node"], () => (__webpack_require__("./components/page-content/page-content.scss")))
-/******/ 	__webpack_require__.O(undefined, ["build/css/main.style","components/navbar/navbar","components/feature/feature","components/cedar-image/cedar-image","components/block/block","components/textarea/textarea","components/photo-slider/photo-slider","components/page/page","components/page-navigation/page-navigation","components/page-content/page-content","components/node/node"], () => (__webpack_require__("./components/page-navigation/page-navigation.scss")))
-/******/ 	__webpack_require__.O(undefined, ["build/css/main.style","components/navbar/navbar","components/feature/feature","components/cedar-image/cedar-image","components/block/block","components/textarea/textarea","components/photo-slider/photo-slider","components/page/page","components/page-navigation/page-navigation","components/page-content/page-content","components/node/node"], () => (__webpack_require__("./components/page/page.scss")))
-/******/ 	__webpack_require__.O(undefined, ["build/css/main.style","components/navbar/navbar","components/feature/feature","components/cedar-image/cedar-image","components/block/block","components/textarea/textarea","components/photo-slider/photo-slider","components/page/page","components/page-navigation/page-navigation","components/page-content/page-content","components/node/node"], () => (__webpack_require__("./components/photo-slider/photo-slider.scss")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["build/css/main.style","components/navbar/navbar","components/feature/feature","components/cedar-image/cedar-image","components/block/block","components/textarea/textarea","components/photo-slider/photo-slider","components/page/page","components/page-navigation/page-navigation","components/page-content/page-content","components/node/node"], () => (__webpack_require__("./components/textarea/textarea.scss")))
+/******/ 	__webpack_require__.O(undefined, ["build/css/main.style","components/feature/feature","components/cedar-image/cedar-image","components/block/block","components/accordion/accordion","components/textarea/textarea","components/photo-slider/photo-slider","components/page/page","components/page-navigation/page-navigation","components/page-content/page-content","components/node/node","components/navbar/navbar"], () => (__webpack_require__("./src/js/main.script.js")))
+/******/ 	__webpack_require__.O(undefined, ["build/css/main.style","components/feature/feature","components/cedar-image/cedar-image","components/block/block","components/accordion/accordion","components/textarea/textarea","components/photo-slider/photo-slider","components/page/page","components/page-navigation/page-navigation","components/page-content/page-content","components/node/node","components/navbar/navbar"], () => (__webpack_require__("./src/scss/main.style.scss")))
+/******/ 	__webpack_require__.O(undefined, ["build/css/main.style","components/feature/feature","components/cedar-image/cedar-image","components/block/block","components/accordion/accordion","components/textarea/textarea","components/photo-slider/photo-slider","components/page/page","components/page-navigation/page-navigation","components/page-content/page-content","components/node/node","components/navbar/navbar"], () => (__webpack_require__("./components/accordion/accordion.scss")))
+/******/ 	__webpack_require__.O(undefined, ["build/css/main.style","components/feature/feature","components/cedar-image/cedar-image","components/block/block","components/accordion/accordion","components/textarea/textarea","components/photo-slider/photo-slider","components/page/page","components/page-navigation/page-navigation","components/page-content/page-content","components/node/node","components/navbar/navbar"], () => (__webpack_require__("./components/block/block.scss")))
+/******/ 	__webpack_require__.O(undefined, ["build/css/main.style","components/feature/feature","components/cedar-image/cedar-image","components/block/block","components/accordion/accordion","components/textarea/textarea","components/photo-slider/photo-slider","components/page/page","components/page-navigation/page-navigation","components/page-content/page-content","components/node/node","components/navbar/navbar"], () => (__webpack_require__("./components/cedar-image/cedar-image.scss")))
+/******/ 	__webpack_require__.O(undefined, ["build/css/main.style","components/feature/feature","components/cedar-image/cedar-image","components/block/block","components/accordion/accordion","components/textarea/textarea","components/photo-slider/photo-slider","components/page/page","components/page-navigation/page-navigation","components/page-content/page-content","components/node/node","components/navbar/navbar"], () => (__webpack_require__("./components/feature/feature.scss")))
+/******/ 	__webpack_require__.O(undefined, ["build/css/main.style","components/feature/feature","components/cedar-image/cedar-image","components/block/block","components/accordion/accordion","components/textarea/textarea","components/photo-slider/photo-slider","components/page/page","components/page-navigation/page-navigation","components/page-content/page-content","components/node/node","components/navbar/navbar"], () => (__webpack_require__("./components/navbar/navbar.scss")))
+/******/ 	__webpack_require__.O(undefined, ["build/css/main.style","components/feature/feature","components/cedar-image/cedar-image","components/block/block","components/accordion/accordion","components/textarea/textarea","components/photo-slider/photo-slider","components/page/page","components/page-navigation/page-navigation","components/page-content/page-content","components/node/node","components/navbar/navbar"], () => (__webpack_require__("./components/node/node.scss")))
+/******/ 	__webpack_require__.O(undefined, ["build/css/main.style","components/feature/feature","components/cedar-image/cedar-image","components/block/block","components/accordion/accordion","components/textarea/textarea","components/photo-slider/photo-slider","components/page/page","components/page-navigation/page-navigation","components/page-content/page-content","components/node/node","components/navbar/navbar"], () => (__webpack_require__("./components/page-content/page-content.scss")))
+/******/ 	__webpack_require__.O(undefined, ["build/css/main.style","components/feature/feature","components/cedar-image/cedar-image","components/block/block","components/accordion/accordion","components/textarea/textarea","components/photo-slider/photo-slider","components/page/page","components/page-navigation/page-navigation","components/page-content/page-content","components/node/node","components/navbar/navbar"], () => (__webpack_require__("./components/page-navigation/page-navigation.scss")))
+/******/ 	__webpack_require__.O(undefined, ["build/css/main.style","components/feature/feature","components/cedar-image/cedar-image","components/block/block","components/accordion/accordion","components/textarea/textarea","components/photo-slider/photo-slider","components/page/page","components/page-navigation/page-navigation","components/page-content/page-content","components/node/node","components/navbar/navbar"], () => (__webpack_require__("./components/page/page.scss")))
+/******/ 	__webpack_require__.O(undefined, ["build/css/main.style","components/feature/feature","components/cedar-image/cedar-image","components/block/block","components/accordion/accordion","components/textarea/textarea","components/photo-slider/photo-slider","components/page/page","components/page-navigation/page-navigation","components/page-content/page-content","components/node/node","components/navbar/navbar"], () => (__webpack_require__("./components/photo-slider/photo-slider.scss")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["build/css/main.style","components/feature/feature","components/cedar-image/cedar-image","components/block/block","components/accordion/accordion","components/textarea/textarea","components/photo-slider/photo-slider","components/page/page","components/page-navigation/page-navigation","components/page-content/page-content","components/node/node","components/navbar/navbar"], () => (__webpack_require__("./components/textarea/textarea.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

@@ -191,35 +191,4 @@
   --bs-form-invalid-border-color: rgb(232.2, 151.8, 149.4);
 }
 
-.path-frontpage .page-title {
-  display: none;
-}
-.path-frontpage .banner {
-  /*  background-image: url("../../build/assets/images/tcbg1.jpg");*/
-  /* Background image is now provided by settings */
-  background-size: cover;
-  min-height: 250px;
-  margin-bottom: 0;
-  padding: 0;
-}
-.path-frontpage nav.navbar {
-  height: 40px;
-}
-
-.path-page nav.navbar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  height: 40px;
-  z-index: 500;
-}
-
-.path-page.toolbar-horizontal.toolbar-fixed nav.navbar {
-  top: 50px;
-}
-.path-page.toolbar-horizontal.toolbar-fixed .gin-secondary-toolbar {
-  top: 90px;
-}
-
-/*# sourceMappingURL=page.css.map*/
+/*# sourceMappingURL=accordion.css.map*/
