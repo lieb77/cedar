@@ -206,23 +206,28 @@
   height: 40px;
 }
 
-.path-page nav.navbar,
-.path-node nav.navbar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  height: 40px;
-  z-index: 500;
+/*
+.path-page,
+.path-node {
+	nav.navbar {
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		height: 40px;
+		z-index: 500;
+	}
 }
 
-.path-page.toolbar-horizontal.toolbar-fixed nav.navbar,
-.path-node.toolbar-horizontal.toolbar-fixed nav.navbar {
-  top: 50px;
+.path-page.toolbar-horizontal.toolbar-fixed, 
+.path-node.toolbar-horizontal.toolbar-fixed {
+	nav.navbar {
+		top: 50px;
+	}
+	.gin-secondary-toolbar{
+		top: 90px;
+	}
 }
-.path-page.toolbar-horizontal.toolbar-fixed .gin-secondary-toolbar,
-.path-node.toolbar-horizontal.toolbar-fixed .gin-secondary-toolbar {
-  top: 90px;
-}
+*/
 
 /*# sourceMappingURL=page.css.map*/
