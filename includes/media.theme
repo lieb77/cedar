@@ -1,0 +1,26 @@
+<?php
+
+function cedar_preprocess_media(&$variables) {
+    if ( $variables['view_mode'] == "picture_with_location") {
+    	$id = $variables['media']->id();
+    	$loc = $variables['media']->get('field_location')->value;
+        $lat = $variables['media']->get('field_latitude')->value;
+        $lng = $variables['media']->get('field_longitude')->value;
+        $alt = $variables['media']->get('field_media_image')->alt;
+        $uri = str_replace('base:', '', $variables['elements']['field_media_image'][0]['#url']->getUri());
+
+        $map = "https://maps.geoapify.com/v1/staticmap?" .
+        'apiKey=' . 'afb07405abd846fc93dd0767b28f18d3' . '&' .
+        'marker=lonlat:' . $lng . ',' . $lat . '&' . 
+        'width=300&height=300&zoom=8';
+        
+        $variables['data'] = [
+        	'id'  => $id,
+        	'loc' => $loc,
+            'alt' => $alt,
+            'uri' => $uri,
+            'map' => $map,
+        ];
+    }
+
+}

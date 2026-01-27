@@ -12,8 +12,4 @@
  * @ingroup themeable
  */
 #}
-{% if view_mode == "picture_with_location" %}
-    {% include 'cedar:photo-card' with data %}
-{% else %}
-	{% include "radix:media" %}
-{% endif %}
+{% include "cedar:media" %}

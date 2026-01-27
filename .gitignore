@@ -21,3 +21,5 @@ mix-manifest.json
 pnpm*
 build
 build/*
+
+ mix-manifest.json

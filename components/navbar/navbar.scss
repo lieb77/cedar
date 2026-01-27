@@ -4,10 +4,15 @@
 // other navbar variations.
 
 
+
+.navbar {
+  z-index: 500 !important;
+}
+
 .navbar,
 .dropdown,
 .dropdown-item,
-.dropdown-item.active, 
+.dropdown-item.active,
 .dropdown-item:active {
  	background-image: linear-gradient(#5f9ea0, #319088 60%, #143a3a);
 }
@@ -37,9 +42,9 @@
 .tooltip,
 .dropdown-menu .dropdown-item,
 .pagination,
-.breadcrumb, 
-.nav-pills .nav-link, 
-.nav-tabs .nav-link, 
+.breadcrumb,
+.nav-pills .nav-link,
+.nav-tabs .nav-link,
 .btn {
 	text-transform: none !important;
 	font-size: .8rem !important;

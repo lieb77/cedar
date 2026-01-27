@@ -1,11 +1,11 @@
 @import "../../src/scss/init";
 
-.path-frontpage { 
+.path-frontpage {
 
 	.page-title {
 		display: none;
 	}
-	
+
 	.banner {
 		/*  background-image: url("../../build/assets/images/tcbg1.jpg");*/
 		/* Background image is now provided by settings */
@@ -14,41 +14,11 @@
 	  margin-bottom: 0;
 	  padding: 0;
 	}
-	
-	nav.navbar {
-		height: 40px;
-	}
-	
+
 }
-/*
-.path-page,
-.path-node {
-	nav.navbar {
-		position: fixed;
-		top: 0;
-		right: 0;
-		left: 0;
-		height: 40px;
-		z-index: 500;
-	}
-}
-	
-.path-page.toolbar-horizontal.toolbar-fixed, 
-.path-node.toolbar-horizontal.toolbar-fixed {
-	nav.navbar {
-		top: 50px;
-	}
-	.gin-secondary-toolbar{
-		top: 90px;
-	}
-}
-<<<<<<< HEAD
 
 .path-aggregator {
  	main {
 		margin: 0 25%;
 	}
 }
-=======
-*/
->>>>>>> 2.x-dev
