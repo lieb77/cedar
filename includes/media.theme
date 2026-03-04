@@ -12,7 +12,7 @@ function cedar_preprocess_media(&$variables) {
         $map = "https://maps.geoapify.com/v1/staticmap?" .
         'apiKey=' . 'afb07405abd846fc93dd0767b28f18d3' . '&' .
         'marker=lonlat:' . $lng . ',' . $lat . '&' . 
-        'width=300&height=300&zoom=8';
+        'width=600&height=400&zoom=8';
         
         $variables['data'] = [
         	'id'  => $id,
